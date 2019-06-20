@@ -8,6 +8,8 @@ import java.io.Serializable;
 
 @Repository
 public interface RepositorioPropuestas  extends MongoRepository<Propuesta, Serializable> {
+    public Propuesta findByIdPropuesta(String idPropuesta);
+
 
 }
 

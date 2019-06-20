@@ -2,6 +2,7 @@ package jupiter.jupiter.models;
 
 
 import lombok.Data;
+import org.springframework.boot.autoconfigure.AutoConfigureOrder;
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -14,6 +15,7 @@ import java.util.Collection;
 public class Propuesta implements Serializable {
     @Id
     @NotNull
+    @AutoConfigureOrder
     private String idPropuesta;
     private String nombrePropuesta;
     private String cliente;
@@ -22,7 +24,6 @@ public class Propuesta implements Serializable {
     private String estado;
 
     public Propuesta(String idPropuesta, String nombrePropuesta, String cliente, String fecha, String estado) {
-
         this.idPropuesta = idPropuesta;
         this.nombrePropuesta = nombrePropuesta;
         this.cliente = cliente;
