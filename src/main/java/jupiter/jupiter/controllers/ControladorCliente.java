@@ -35,6 +35,13 @@ public class ControladorCliente {
         return true;
     }
 
+    @PostMapping(value = "/editarCliente")
+    @CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
+    public boolean editarCliente(@RequestBody Cliente cliente){
+        this.repoClientes.save(cliente);
+        return true;
+    }
+
 
 
 

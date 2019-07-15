@@ -66,11 +66,11 @@ public class Cliente {
         this.evaluacionCliente = evaluacionCliente;
     }
 
-    public String getEmail() {
+    public String getEmailCliente() {
         return emailCliente;
     }
 
-    public void setEmail(String emailCliente) {
+    public void setEmailCliente(String emailCliente) {
         this.emailCliente = emailCliente;
     }
 
