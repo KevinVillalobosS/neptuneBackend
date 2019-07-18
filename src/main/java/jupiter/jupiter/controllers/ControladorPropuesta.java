@@ -1,5 +1,6 @@
 package jupiter.jupiter.controllers;
 
+import jupiter.jupiter.models.Cliente;
 import jupiter.jupiter.models.Propuesta;
 import jupiter.jupiter.repository.RepositorioPropuestas;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -39,6 +40,13 @@ public class ControladorPropuesta {
         return true;
     }
 
+    @PostMapping("/propuestasCliente")
+    @CrossOrigin(origins = "*", methods= {RequestMethod.GET,RequestMethod.POST})
+    public List<Propuesta> propuestasAsociadas(@RequestBody Cliente cliente){
+        List<Propuesta> propuestasCliente;
+        propuestasCliente = this.repoPropuestas.findPropuestasByIdCliente(cliente.getIdCliente());
+        return propuestasCliente;
+    }
 
 
 

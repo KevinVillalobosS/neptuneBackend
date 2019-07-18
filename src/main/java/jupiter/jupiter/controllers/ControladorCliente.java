@@ -1,6 +1,7 @@
 package jupiter.jupiter.controllers;
 
 import jupiter.jupiter.models.Cliente;
+import jupiter.jupiter.models.Propuesta;
 import jupiter.jupiter.repository.RepositorioCliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -41,12 +42,6 @@ public class ControladorCliente {
         this.repoClientes.save(cliente);
         return true;
     }
-
-
-
-
-
-
 
 
 }

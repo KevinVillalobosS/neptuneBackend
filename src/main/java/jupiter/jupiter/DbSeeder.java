@@ -19,21 +19,24 @@ public class DbSeeder implements CommandLineRunner {
         Propuesta propuesta1 = new Propuesta(
                 "1",
                 "Titanium",
-                "Fech",
+                "FACH",
+                "2",
                 "01/02/2019",
                 "Pendiente"
         );
         Propuesta propuesta2 = new Propuesta(
                 "2",
                 "Nuevo Pudahuel",
-                "Fech",
+                "EFE",
+                "3",
                 "03/05/2016",
                 "aprobado"
         );
         Propuesta propuesta3 = new Propuesta(
                 "3",
                 "Cau Cau",
-                "Gobierno de Shile",
+                "EFE",
+                "3",
                 "20/12/2019",
                 "Pendiente"
         );

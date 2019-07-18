@@ -9,6 +9,7 @@ import java.util.List;
 
 @Repository
 public interface RepositorioPropuestas  extends MongoRepository<Propuesta, Serializable> {
+    public List<Propuesta> findPropuestasByIdCliente(String idCliente);
 
 }
 

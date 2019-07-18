@@ -19,21 +19,29 @@ public class Propuesta implements Serializable {
     private String idPropuesta;
     private String nombrePropuesta;
     private String cliente;
+    private String idCliente;
     private String fecha;
     //private String[] tags;
     private String estado;
 
-    public Propuesta(String idPropuesta, String nombrePropuesta, String cliente, String fecha, String estado) {
+    public Propuesta(@NotNull String idPropuesta, String nombrePropuesta, String cliente, String idCliente, String fecha, String estado) {
         this.idPropuesta = idPropuesta;
         this.nombrePropuesta = nombrePropuesta;
         this.cliente = cliente;
+        this.idCliente = idCliente;
         this.fecha = fecha;
-        //this.tags = tags;
         this.estado = estado;
     }
 
     public Propuesta(){}
 
+    public String getIdCliente() {
+        return idCliente;
+    }
+
+    public void setIdCliente(String idCliente) {
+        this.idCliente = idCliente;
+    }
 
     public String getIdPropuesta() {
         return idPropuesta;
