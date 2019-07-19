@@ -43,11 +43,10 @@ public class DbSeeder implements CommandLineRunner {
 
         //Se limpia la base de datos de pruebas
         this.repoProp.deleteAll();
-
         //Se agregan elementos de prueba
-        this.repoProp.save(propuesta1);
+        /*this.repoProp.save(propuesta1);
         this.repoProp.save(propuesta2);
-        this.repoProp.save(propuesta3);
+        this.repoProp.save(propuesta3);*/
     }
 
 

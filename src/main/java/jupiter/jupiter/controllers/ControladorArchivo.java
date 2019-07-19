@@ -32,7 +32,7 @@ public class ControladorArchivo {
     @GetMapping("/bajar")
     @CrossOrigin(origins = "*", methods= {RequestMethod.GET, RequestMethod.POST})
     public String bajar(String idarchivo){
-        Archivo archivo = this.repositorioArchivo.findByIdArchivo(idarchivo);
+        Archivo archivo = this.repositorioArchivo.findByIdArchivo("1");
         //Blob blob = archivo.getArchivo();
         return "hecho";
     }
